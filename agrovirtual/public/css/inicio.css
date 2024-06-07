@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EEEEEE;
+}
+.contenedor_global{
+    height: 230vh;
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows: 5% auto 10% auto auto auto 5% auto ;
+    grid-template-areas: "header header header header header header"
+                         "main main main main main main"
+                         "publicidad publicidad publicidad publicidad publicidad publicidad"
+                         "section article article article article aside"
+                         "section article article article article aside"
+                         "section article article article article aside"
+                         "paginacion paginacion paginacion paginacion paginacion paginacion"
+                         "footer footer footer footer footer footer";
+}
+.imagenes{
+    object-fit: scale-down;
+    height: 80%;
+}
+.card-content{
+    height: 150px;
+}
+.precio_producto{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+::placeholder{
+    color: black;
+}
+.input-field input, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #9E9E9E !important;
+}
+.modal-header{
+    padding: 1rem;
+    background-color: #EEEEEE ;
+}
+.pagination{
+    display: flex;
+    flex-direction: row;
+}
+header{
+    grid-area: header;
+}
+nav{
+    background-color: #00AE55;
+}
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.publicidad{
+    grid-area: publicidad;
+    margin-bottom: 1rem;
+}
+section{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+article{
+    grid-area: article;
+}
+aside{
+    grid-area: aside;
+}
+.paginacion{
+    grid-area: paginacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: black;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:800px){
+    .contenedor_global{
+        height: 250vh;
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 1fr auto;
+        grid-template-areas: 'header header header'
+                             'main main main'
+                             'section section section'
+                             'article article article'
+                             'paginacion paginacion paginacion'
+                             'footer footer footer';
+
+    }
+}
+.nav-wrapper .brand-logo img {
+    height: 64px;
+    padding: 0.5rem;
+}
+ @media (max-width: 600px) {
+     .navbar-material .nav-wrapper .brand-logo img {
+      height: 56px;
+    }
+}
+
+

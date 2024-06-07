@@ -1,0 +1,24 @@
+form.formeditar input[type="text"] {
+  width: 80%;
+  height: 2%;
+  padding: 13px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+form.formeditar input[type="email"] {
+  width: 80%;
+  height: 2%;
+  padding: 13px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+form.formeditar input[type="date"] {
+  width: 40%;
+  height: 8%;
+
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}

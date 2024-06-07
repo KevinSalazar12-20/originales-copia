@@ -1,0 +1,181 @@
+ *{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body{
+  width: 1300px;
+  margin: 0 auto;  /* truco para centrar todo el contenido*/
+  font-family: 'Varela Round', sans-serif;
+  border-style: solid;
+ 
+}
+
+img{
+  padding: 5px;
+
+}
+
+
+
+header{
+ position: relative;   /* esta posicion permite hacer la maquetacion fija de este ejemplo */
+ background-color:#fffa00;
+  padding: 1px;
+ 
+}
+.logo{
+text-align: right;
+
+}
+.usuario{
+  margin-top: 80px;
+  float: right;
+  padding: 10px;
+ 
+ 
+ }
+
+aside{
+position: relative;   
+float:left;
+width: 200px;
+height:500px;
+background-color: #1A1919;
+
+}
+
+/* menu top  */
+
+.menu1{  
+  list-style: none;
+  padding: 15px;
+}
+
+.menu1 li {
+   display: block;
+   margin-top: 10px;
+
+}
+ 
+.menu1 li a{
+   text-decoration: none;
+    color: #FDF9F9;
+    padding: 10px;
+
+}
+
+.menu1 li a:hover{  
+    text-shadow: 1px 0px 1px #b3b1b133; 
+    color: #F3E118;
+    font-size: 16px;
+    
+}
+
+.menu1 li a:active{  
+    text-shadow: 1px 0px 1px #b3b1b133; 
+    background-color: #FFFFFF;
+}
+
+.menu1 li ul{
+        display:none;
+        position:absolute;
+        
+        
+    }
+            
+.menu1  li:hover ul{
+    display:block;
+    width: 160px;
+    position:relative;
+    background-color: #44444433;
+    left: 8px;
+    transition: 1.2s;
+    }
+
+
+/* FIN DEL MENU TOP */
+
+/*MENU LATERAL */
+
+article{
+     position: relative;   
+     float:left;
+     width: 1000px;    
+     padding: 5px;
+     height:390px;
+}
+
+section{
+     position: relative;   
+     float:left;
+     width: 450px;    
+     padding: 5px;
+     text-align: justify;
+}
+
+table, th, td {
+  text-align: left;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+th{
+border: 1px solid white;
+color:white;
+background-color: black;
+}
+
+/* formularios */
+
+
+input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-left: 1px;  
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.mensaje{
+  padding: 5px;
+  background-color: #4CAF50;
+  border-style: solid;
+
+}
+.login{
+  position: relative;   
+  float:left;
+  width: 400px;    
+  padding: 5px;
+  text-align: justify;
+}
+footer{
+    clear:both;   /*truco para dejar el footer siempre abajo*/
+    padding: 5px;
+    text-align: center;
+    background-color:#002bff;
+    color:#ccc;
+
+}

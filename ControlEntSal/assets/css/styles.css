@@ -1,0 +1,498 @@
+	
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.contedor_global{
+	height: 100vh;
+}
+
+header{
+	width: 100%;
+	height: 10%;
+	background: #238276;
+	
+	
+}
+body{
+	font-family: 'Manjari', sans-serif;
+}
+.logo{
+	height: 75px;
+	margin-left: 20px;
+}
+.contenido_principal{
+	display: flex;
+	height: 81vh; 
+	flex-direction: row;
+
+}
+.nav{
+	display: flex;
+	flex-direction: column;
+	background: #59B548;
+	width: 15%;
+}
+/*-----------------------------estilos nav-----------------------------*/
+.nav li a{
+	text-decoration:none;
+	color:black;
+}
+.nav li{
+
+	display: flex;
+	background:  #59B548;
+	padding: 20px;
+
+}
+.nav li:hover{
+	
+	background:#238276 ;
+	color:white;
+	
+
+}
+.nav li a:hover{
+	
+	color:#f9f9f9 ;
+	
+
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #238276;
+	height: 8.8vh;
+	width: 100%;
+	clear:both;   
+		
+}
+/*-----------------------------estilos nav-----------------------------*/
+/*estilos para el contenido nuevo se colocaria (section ul li) por  ejemplo para no afectar los estilos
+de las demas plantillas, pueden cambiarle el nobre asignandole una clase pero conservando los datos
+del heigth y el width
+*/
+section{
+
+	height: 100%;
+	width: 85%;
+}
+/*------------------------------------apartado del diseño para la pagina BUSCADOR.php--------------------------------------------------------------------*/
+.buscador{
+	position: center;   
+    float:left;
+    height: 300px;   
+    padding: 5px;
+    text-align: justify;
+    margin: 75px auto;
+    width: 300px;
+	margin-left: 400px;
+}
+
+section.buscador input{
+	width: 110%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    background-color:white;
+	border-color:black;
+}
+
+section.buscador .Busqueda{
+	background-color: #46B830;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-left: 1px; 
+	width:40%;
+}
+/*----------------------------------MODIFICO LA TABLA DE INDEX----------------------------------------------------*/
+.index{
+	position: relative;   
+	float: right;
+	width: 250px;    
+	padding: 5px;
+	margin: 15px;
+	text-align: center;
+	padding-right: 700px;
+	
+  }
+  /*Tabla de usuarios*/
+.usuarios{
+	padding: 10px;
+	margin-top: 10px;
+	height: 40px;
+	text-align: center;
+	 background-color:#238276;
+	 border-radius: 10px;
+}
+.res{
+	padding: 5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: 50px;
+	
+}
+
+  th{
+	height: 40px;
+	margin-top: 10px;
+  border: 1px solid white;
+  color:white;
+  background-color: #46B830;
+  border-style: solid;
+  border-color: #46B830;
+  text-align: center;
+  font-size: -50%;
+	
+  }
+  
+  td{
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	height: 40px;
+	border-style: solid;
+	border-color: white;
+  }
+
+/*tabla de bienes*/
+.bienes{
+	padding: 10px;
+	margin-top: 10px;
+	height: 40px;
+	text-align: center;
+	 background-color:#238276;
+	 border-radius: 10px;
+}
+.ras{
+	padding: 5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: 50px;
+	
+}
+
+  th{
+	height: 40px;
+	margin-top: 10px;
+  border: 1px solid white;
+  color:white;
+  background-color: #46B830;
+  border-style: solid;
+  border-color: #46B830;
+  text-align: center;
+  font-size: -50%;
+	
+  }
+  
+  td{
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	height: 40px;
+	border-style: solid;
+	border-color: white;
+  }
+/*tabla admis*/
+.admis{
+	padding: 10px;
+	margin-top: 10px;
+	height: 40px;
+	text-align: center;
+	 background-color:#238276;
+	 border-radius: 10px;
+}
+.ris{
+	padding: 5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: 50px;
+	
+}
+
+  th{
+	height: 40px;
+	margin-top: 10px;
+  border: 1px solid white;
+  color:white;
+  background-color: #46B830;
+  border-style: solid;
+  border-color: #46B830;
+  text-align: center;
+  font-size: -50%;
+	
+  }
+  
+  td{
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	height: 40px;
+	border-style: solid;
+	border-color: white;
+  }
+/*------------------------------------apartado del diseño para la pagina LOGIN.php--------------------------------------------------------------------*/
+
+.login{
+    position: center;   
+    float:left;
+    height: 300px;   
+    padding: 5px;
+    text-align: justify;
+    margin: 75px auto;
+    width: 300px;
+    margin-left: 400px;
+    
+}
+
+section.login input{
+	width: 110%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    background-color:white;
+	border-color:black;
+    
+    float: center;
+}
+
+section.login label{
+	padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size:1.5em;
+}
+
+section.login select{
+	width: 110%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    background-color:white;
+	border-color:black;
+    
+    float: center;
+}
+
+section.login .SubmitLogin{
+	background-color: #46B830;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-left: 1px; 
+	width:40%;
+}
+
+/*-----------apartado del diseño para la pagina REGISTRAR_USUARIO.php-----------*/
+/*contenedor*/
+.RegistrarUsuario{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+
+}
+
+.RegistrarUsuario h1{
+	margin-bottom: 20px;
+}
+
+section .registrar_usuario{
+	width: 400px;
+	margin: 20px;
+}
+section .registrar_usuario input{
+	padding: 5px;
+	margin-left: 15px;
+	width: 250px;
+}
+section .registrar_usuario select{
+	padding: 5px;
+	margin-left: 15px;
+	width: 250px;
+}
+section .registrar_usuario .boton{
+	width: 100px;
+	background-color: #59B548;
+}
+/*-----------apartado del diseño para la pagina REGISTRAR_USUARIO.php-----------*/
+
+/*-----------apartado del diseño para la pagina REGISTRAR_USUARIO.php-----------*/
+/*contenedor*/
+.sena{
+	position: center;   
+    float:left;
+    height: 300px;   
+    padding: 5px;
+    text-align: justify;
+    margin: 75px auto;
+    width: 300px;
+    margin-left: 400px;
+}
+
+.sena h1{
+	margin-bottom: 20px;
+}
+
+
+section.sena input{
+	padding: 5px;
+	margin-left: 15px;
+	width: 250px;
+}
+
+
+section.sena select{
+	padding: 5px;
+	margin-left: 15px;
+	width: 250px;
+}
+
+section.sena .boton{
+	width: 100px;
+	background-color: #59B548;
+}
+/*-----------apartado del diseño para la pagina REGISTRAR_bien.php-----------*/
+.RegistrarBien{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+
+}
+
+.RegistrarBien h1{
+	padding-bottom: 20px;
+}
+
+section.RegistrarBien{
+	
+	margin: 20px;
+}
+section.RegistrarBien input{
+	padding: 5px;
+	margin-left: 15px;
+	width: 250px;
+}
+section.RegistrarBien select{
+	padding: 5px;
+	margin-left: 15px;
+	width: 250px;
+}
+
+section.RegistrarBien .boton{
+	width: 100px;
+	background-color: #59B548;
+}
+/*-----------apartado del diseño para la pagina REGISTRAR_bien.php-----------*/
+
+/*-----------apartado para el diseño de administrarBien y buscarBienAdministrar--------------*/
+.sectionBuscar{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.sectionBuscar form{
+	width: 600px;
+}
+.sectionBuscar form h1{
+	margin-bottom: 40px;
+}
+.sectionBuscar form input{
+	padding: 5px;
+}
+.btnBuscar{
+	width: 100px;
+	background-color: #59B548;
+}
+
+
+
+.administraBien{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.administraBien form{
+	width: 600px;
+}
+.administraBien form h1{
+	margin-bottom: 40px;
+}
+.administraBien form input{
+	padding: 5px;
+}
+.botonadministraBien{
+	width: 100px;
+	background-color: #59B548;
+}
+
+/*-----------apartado para el diseño de administrarBien y buscarBienAdministrar--------------*/
+
+/*-----------APARATADO PARA INFORME E INFORMERESULTADO--------------*/
+.Buscarinforme{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+
+}
+.formBuscarInforme h1{
+	margin-bottom: 20px;
+}
+.formBuscarInforme input{
+	padding: 5px;
+}
+.formBuscarInforme .botonBuscarinforme{
+	width: 100px;
+	background-color: #59B548;
+}
+
+.sesioninformeResultado{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center; 	
+}
+
+.sesioninformeResultado .tablaResultado{
+	position: relative;
+	border-collapse: collapse;
+	color: white;
+}
+.sesioninformeResultado .tablaResultado td{
+	padding: 10px;
+}
+
+.sesioninformeResultado .tablaResultado th{
+	padding: 10px;
+}
+
+tr:nth-child(odd) {
+	
+    background-color:#238276;
+	
+}
+	
+tr:nth-child(even) {
+	
+    background-color:#59B548;
+	
+}
+.tituloBitacora{
+	margin-right: 20px;
+}
+
+/*-----------APARATADO PARA INFORME E INFORMERESULTADO--------------*/
+

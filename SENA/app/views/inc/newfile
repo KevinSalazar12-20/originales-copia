@@ -1,0 +1,67 @@
+/*<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>  */
+
+ return console.log(respuesta.text());
+
+
+
+function listar_municipio() {
+    let objeto = {
+        'secret': 1
+    };
+    let formData = new FormData();
+    formData.append('datos', JSON.stringify(objeto));
+    fetch(RUTA_URL + 'listar_municipio', {method: 'POST', body: formData})
+        .then(function (respuesta) {
+            if (respuesta.ok) {
+                return respuesta.text();
+            } else {
+                throw "Error en el envió";
+            }
+        })
+        .then(function (json) {
+            console.log(json);
+            let datos = JSON.parse(json);
+            if ((Object.entries(datos).length)) {
+                let tabla = document.querySelector('#respuesta_municipio_eliminar');
+                tabla.innerHTML = '';
+                for (let dato of datos) {
+                    tabla.innerHTML += ` 
+                         <tr>
+                            <td>${dato.nombre}</td>
+                            <td>${dato.departamento}</td>
+                            <td><button type="button" class="btn btn-danger" onclick="eliminar_municipio(${dato.id_municipio}, event)">Eliminar</button></td>
+                         </tr>`;
+                }
+            }
+        }).catch(function (error) {
+        console.log(error);
+    });
+}
+
+
+         <?php foreach ($datos as $dato ){
+                    echo '<tr>';
+                    echo '<td>';
+                    echo $dato->idcliente;
+                    echo '</td>';
+                    echo '<td>';
+                    echo $dato->clientenombre;
+                    echo '</td>';
+                    echo '<td>';
+                    echo $dato->clienteapellidos;
+                    echo '</td>';
+                    echo '<td>';
+                    echo $dato->direccion;
+                    echo '</td>';
+                    echo '<td>';
+                    echo $dato->email;
+                    echo '</td>';
+                    echo '<td>';
+                    echo $dato->estado;
+                    echo '</td>';
+                    echo '<td>';
+                    echo "<i class='icon-male'> </i> ";
+                    echo '</td>';                
+
+                    echo '</tr>';
+} 

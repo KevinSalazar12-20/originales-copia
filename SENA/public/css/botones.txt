@@ -1,0 +1,9 @@
+font awesome 3.2
+<i class='icon-pencil'> editar
+<i class='icon-edit'> editar
+<i class='icon-trash'> borra
+<i class='icon-print'> imprime
+<i class='icon-plus'> nuevo
+<i class='icon-reply'> cancelar
+
+https://fontawesome.com/v3.2.1/icons/#web-application
